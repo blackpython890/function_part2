@@ -50,12 +50,12 @@ def test_shift_characters():
 def test_random_number_plate():
     z = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
     s = ["KA" + str(random.randint(11,98)) + str(random.choice(z)) + str(random.choice(z)) + str(random.randint(1001,9998)) for i in range(15)]
-    assert type(s)
+    assert type(s) is list
 
 
 #8 Number plate genration using partial
 def test_number_plate_partial():
-    f = partial(session7.numberplate, const = 1011 )
+    f = partial(session7.numberplate, const = 1011)
     k = f('DL')
     assert type(k) is list
 
