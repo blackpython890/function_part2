@@ -55,10 +55,9 @@ def test_random_number_plate():
 
 #8 Number plate genration using partial
 def test_number_plate_partial():
-    f = partial(session7.numberplate, const = 1011)
-    k = f('DL')
+    f=partial(session7.numberplate,b=1011)
+    k=f('DL')
     assert type(k) is list
-
 
 #9 
 def test_reduce_add_even_number_():
