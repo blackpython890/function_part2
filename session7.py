@@ -11,11 +11,10 @@ def filterFibnocci(number):
     else:
         return False
 
-
-def numberplate(state_code, const):
-    alp = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
-    plate_no = [ state_code + str(random.randint(11,98)) + str(random.choice(z))+ str(random.choice(alp)) + str(const) for i in range(15)]
-    return plate_no
+def numberplate(a,b):
+    z=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+    s=[a+str(random.randint(11,98))+str(random.choice(z))+str(random.choice(z))+str(b) for i in range(15)]
+    return s
 
 
 def generate_even_number_list():
